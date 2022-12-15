@@ -108,7 +108,7 @@ body,
   font-family: 'Merriweather', serif;
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: rgb(0, 34, 61);
+  color: var(--black);
 }
 
 .social{
@@ -121,7 +121,7 @@ body,
   padding: 0.45rem 1rem;
 }
 i.fa{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--gray);
   transition: color 0.3s linear;
   margin: 0 -7px;
