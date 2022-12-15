@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: rgb(22, 25, 44);
+  --white: #ffffff;
+  --darkwhite: #f5f5dc;
+  --whitesmoke: #f5f5f5;
+  --green: #04aa6d;
+  --skyblue: #00b0f0;
+  --cyan: #124760;
+  --blue: #303d6c;
+  --lightcyan: #2caee6;
+  --red: #e65593;
+  --gray: #c1c1c1;
+  --lightheadbg: rgba(240, 248, 255, 0.85);
+  --darkheadbg: rgba(181, 218, 250, 0.947);
+  --lightboxbg: #f0f8ffa6;
+}
+
+html {
+  font-size: 16px;
+}
+body,
+.container {
+  /* overflow: hidden; */
+  min-width: 99vw;
+  min-height: 99vh;
+  background-color: var(--lightboxbg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.wrapper {
+  height: fit-content;
+  width: fit-content;
+  margin: 1.25rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  width: 21.25rem;
+  height: fit-content;
+  overflow: hidden;
+  border: solid 2px rgb(0, 0, 0);
+  border-bottom: solid 3px rgb(0, 81, 148);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.605);
+
+}
+.card::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 23rem ;
+  height: 7.81rem;
+  background-color: var(--skyblue);
+}
+.img {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0rem;
+  text-align: center;
+  overflow: hidden;
+  border: var(--cyan ) solid 3px;
+  border-radius: 50%;
+}
+.img img {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+}
+
+.details {
+  width: 21.25rem;
+  text-align: left;
+  padding: 0.45rem 1rem;
+}
+
+.name{
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--cyan);
+}
+.position{
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(0, 34, 61);
+}
+.about{
+  font-family: 'Merriweather', serif;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgb(0, 34, 61);
+}
+
+.social{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 21.25rem;
+  height: 3.13rem;
+  background-color: var(--black);
+  padding: 0.45rem 1rem;
+}
+i.fa{
+  font-size: 1.3rem;
+  color: var(--gray);
+  transition: color 0.3s linear;
+  margin: 0 -7px;
+}
+i.fa:hover{
+  color: white;
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+  html{
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px){
+  html{
+    font-size: 12px;
+  }
+}
